@@ -2,7 +2,7 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const conn = require('./db/conn');
 
-const ProdutosController = require('./routes/ProdutosRoutes')
+const ProductsController = require('./routes/ProductsRoutes')
 const app = express();
 
 // Configuração do Handlebars
@@ -15,6 +15,6 @@ app.use(express.json());
 
 // Middleware para servir arquivos estáticos
 app.use(express.static('public'));
-app.use('/', ProdutosController)
+app.use('/', ProductsController)
 
 app.listen(3000)

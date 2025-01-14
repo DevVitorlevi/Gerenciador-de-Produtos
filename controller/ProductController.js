@@ -29,7 +29,7 @@ module.exports = class ProductController{
 
         const product = await Product.findOne({_id:id}).lean()
 
-        res.render('product/edit', {product})
+        res.render('products/edit', {product})
         
     }
 }

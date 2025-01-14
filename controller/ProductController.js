@@ -7,4 +7,13 @@ module.exports = class ProductController{
     static CreateProduct(req,res){
         res.render('products/create')
     }
+    static async AddProduct(req,res){
+        const {name,price,amount,description} = req.body
+
+        const product = new Product({name,price,amount,description})
+
+        await product.save()
+
+        res.redirect('/')
+    }
 }

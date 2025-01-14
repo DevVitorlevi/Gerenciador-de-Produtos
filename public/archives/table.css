@@ -1,0 +1,55 @@
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto; 
+}
+.table-titulo{
+    text-align: center;
+    color: black;
+    margin: 5px;
+}
+table{
+    border-collapse: collapse;
+    color: black;
+    width: 1000px;
+    margin: 5px;
+    position: relative;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    color: white;
+
+}
+thead{
+    background-color:#00BFFF;
+}
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+tbody a{
+    text-decoration: none;
+    color: black;
+}
+tbody a:hover{
+    text-decoration: underline;
+
+}
+tbody tr > td {
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+}
+form > button{
+    padding: 10px;
+    width: 30pc;
+    background-color:#00BFFF;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+}

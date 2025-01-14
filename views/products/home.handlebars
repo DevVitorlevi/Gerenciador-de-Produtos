@@ -1,3 +1,25 @@
-    {{#each products}}
-    <h1>{{this.name}}</h1>
-    {{/each}}
+<link rel="stylesheet" href="/archives/table.css">
+<div class="table">
+    <h1 class="table-titulo">Todos Os Produtos Disponiveis</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr>
+                    <td><a href="/produto/{{this._id}}">{{this.name}}</a></td>
+                    <td>R${{this.price}}</td>
+                    <td>{{this.amount}}</td>
+                    <td>{{this.description}}</td>
+                </tr>
+            </a>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

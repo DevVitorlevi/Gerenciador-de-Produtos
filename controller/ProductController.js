@@ -17,4 +17,19 @@ module.exports = class ProductController{
 
         res.redirect('/')
     }
+    static async OneProduct(req,res){
+        const id = req.params.id
+
+        const product = await Product.findOne({_id:id}).lean()
+
+        res.render('products/product', {product} )
+    }
+    static async EditProduct(req,res){
+        const id = req.params.id
+
+        const product = await Product.findOne({_id:id}).lean()
+
+        res.render('product/edit', {product})
+        
+    }
 }

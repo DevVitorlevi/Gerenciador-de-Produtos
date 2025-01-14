@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/archives/table.css">
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody> 
+                <tr>
+                    <td>{{product.name}}</td>
+                    <td>R${{product.price}}</td>
+                    <td>{{product.amount}}</td>
+                    <td>{{product.description}}</td>
+
+                </tr>
+        </tbody>
+    </table>
+</div>
+<form action="/remove/{{product._id}}" method="POST">
+    <button type="submit">Apagar</button>
+    <button type="button"><a href="/">Voltar</a></button>]
+    <button type="button"><a href="/edit/{{product._id}}"></a></button>
+</form>

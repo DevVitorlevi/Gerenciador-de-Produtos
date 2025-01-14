@@ -47,9 +47,14 @@ form{
 }
 form > button{
     padding: 10px;
-    width: 30pc;
+    width: 10pc;
+    margin: 10px;
     background-color:#00BFFF;
     border-radius: 5px;
     border: 0;
+    color: white;
+}
+form > button a{
+    text-decoration: none;
     color: white;
 }

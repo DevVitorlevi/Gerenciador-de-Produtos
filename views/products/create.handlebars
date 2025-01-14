@@ -1,0 +1,27 @@
+
+    <link rel="stylesheet" href="/archives/form.css">
+<main>
+    <div class="container">
+        <div>
+            <h1>Criar Produto</h1>
+        </div>
+        <form action="/adicionar" method="POST">
+            <div class="inputs">
+                <input type="text" name="nome"  class="input" required>
+                <label>Nome do Produto</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="price"  class="input" required min="0" step="0.01">
+                <label>Preco do Produto</label>
+            </div>
+            <div class="inputs">
+                <input type="number" name="amount"  class="input" required min="0" step="0.01">
+                <label>Quantidade do Produto No Estoque</label>
+            </div>
+            <div class="inputs">
+                <input type="text" name="descricao"  class="input textarea" required placeholder="Descreva o Produto"> 
+            </div>
+            <button type="submit">Criar</button>
+        </form>
+    </div>
+</main> 

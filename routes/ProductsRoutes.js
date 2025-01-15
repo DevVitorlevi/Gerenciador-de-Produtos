@@ -7,5 +7,6 @@ router.get('/create', ProductController.CreateProduct)
 router.post('/add', ProductController.AddProduct)
 router.get('/product/:id', ProductController.OneProduct)
 router.get('/edit/:id', ProductController.EditProduct)
+router.post('/update', ProductController.UpdateProduct)
 
 module.exports= router

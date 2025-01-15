@@ -4,9 +4,10 @@
     <div class="container">
         <div>
             <h1>Criar Produto</h1>
+            
         </div>
         <form action="/update" method="POST">
-        <input type="hidden" name="id" value="{{product.id}}">
+        <input type="hidden" name="id" value="{{product._id}}">
             <div class="inputs">
                 <input type="text" name="name"  class="input" required value="{{product.name}}">
                 <label>Nome do Produto</label>

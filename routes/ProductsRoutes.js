@@ -8,5 +8,6 @@ router.post('/add', ProductController.AddProduct)
 router.get('/product/:id', ProductController.OneProduct)
 router.get('/edit/:id', ProductController.EditProduct)
 router.post('/update', ProductController.UpdateProduct)
+router.post('/remove/:id', ProductController.DeleteProduct)
 
 module.exports= router
